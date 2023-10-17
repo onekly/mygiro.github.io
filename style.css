@@ -1,0 +1,569 @@
+/* Стиль всего сайта */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Scada', sans-serif;
+    font-size: 15px;
+}
+
+/* Стиль ссылок */
+a {
+    text-decoration: none;
+}
+
+/* Хедер */
+nav {
+    display: flex;
+    padding: 10px;
+    background-color: blue;
+    justify-content: space-between;
+}
+
+.tel {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header-link, .link {
+    color: white;
+    transition: 0.5s;
+}
+
+.header-link:hover, .link:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header-button-link {
+    color: black;
+}
+
+.logo, .item {
+    padding: 10px;
+}
+
+.menu {
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.menu-links {
+    padding-top: 10px;
+}
+
+.header-button {
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.header-button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.button {
+    width: fit-content;
+    height: fit-content;
+    background-color: blue;
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+}
+
+/* Главный баннер сайта */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 30px;
+    background: url("img/bannerbg.webp") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+
+.banner-textbutton .banner-text {
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Слайдер */
+.slider {
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.sl {
+    background-color: #DBF2FF;
+}
+
+.slides {
+
+    display: flex;
+    overflow-x: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 180px;
+    margin-right: 0;
+    box-sizing: border-box;
+    background: white;
+    transform-origin: center center;
+    transform: scale(1);
+    scroll-snap-align: center;
+}
+
+.slide img {
+    margin-bottom: 15px;
+}
+
+.slide a {
+    position: absolute;
+    top: 48%;
+    width: 35px;
+    height: 35px;
+    border: solid blue;
+    border-width: 0 4px 4px 0;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+a.slide__prev {
+    transform: rotate(135deg);
+    left: 5%;
+}
+
+a.slide__next {
+    transform: rotate(-45deg);
+    right: 5%;
+}
+
+/* О нас */
+.banner-about {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+    background: url("img/aboutbg.webp") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+
+.banner-textbutton-about .banner-text-about {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.banner-textbutton-about .banner-text-about h2 {
+    font-size: xx-large;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.banner-textbutton-about .banner-text-about p {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* "Почему?" */
+.banner-why {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+    background: url("img/hoverboards.webp") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+
+.banner-textbutton-why .banner-text-why {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.banner-textbutton-why .banner-text-why h2 {
+    font-size: xx-large;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.banner-textbutton-why .banner-text-why li {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.banner-textbutton-why .banner-text-why ul {
+    margin-bottom: 30px;
+}
+
+/* Футер */
+footer {
+    background-color: blue;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.nizz {
+    justify-content: space-between;
+    display: flex;
+}
+
+.nizline, .nizline2, .nizline3, .nizline4, .nizline5 {
+    margin-top: 50px;
+    list-style-type: none;
+    color: white;
+}
+
+/* Наши партнёры */
+.our-partners {
+    padding: 30px;
+}
+
+.our-partners-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-partners-text h2 {
+    margin-bottom: 30px;
+}
+
+.our-partners-brands p {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.our-partners-brands-logos {
+    display: flex;
+}
+
+.dd1, .dd2 {
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.514);
+}
+
+.aa {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Блок процесса доставки */
+.how-we-delivery {
+    background: url("img/delivery_banner.webp") no-repeat center;
+    background-size: cover;
+    padding: 30px;
+}
+
+.how-we-delivery h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.how-we-delivery-text {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.how-we-delivery-text p {
+    margin: 15px;
+}
+
+.delivery-steps .delivery-steps-number {
+    border-radius: 100%;
+    background-color: white;
+    padding-left: 17px;
+    padding-right: 17px;
+    font-size: 3em;
+}
+
+.delivery-steps-name {
+    color: blue;
+    font-size: 1.5em;
+}
+
+/* Блок со списком товаров */
+.productsblock2 {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+}
+
+[value="All"]:checked ~ .posts [data-category] {
+    display: flex;
+}
+
+[value="giro"]:checked ~ .posts .post:not([data-category~="giro"]),
+[value="sigv"]:checked ~ .posts .post:not([data-category~="sigv"]),
+[value="samo"]:checked ~ .posts .post:not([data-category~="samo"]) {
+    display: none;
+}
+
+.a1 {
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.buttonlink {
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    background-color: blue;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10PX;
+}
+
+.buttonlink:hover {
+    transition: 0.5s;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.filters {
+    display: flex;
+}
+
+.card1, .card2, .card3, .card4 {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.post {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.posts {
+    padding-top: 50px;
+    margin: auto;
+}
+
+/* Блок с отзывами */
+.feedback {
+    background-color: #DBF2FF;
+}
+
+.feedback1 {
+    display: table;
+    margin: 0 auto;
+}
+
+.container1, .container2 {
+    display: flex;
+    justify-content: center;
+}
+
+.carta1, .carta2, .carta3, .carta4 {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 150px;
+    background-color: white;
+}
+
+.a5 {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.a6 {
+    padding: 10px;
+}
+
+/* Блок подписки на рассылку */
+.subscribeblock {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-size: cover;
+    background-image: url(img/subscribe.webp);
+}
+
+.f1 {
+    outline: none;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    width: 320px;
+    height: 40px;
+}
+
+.f2 {
+    margin-left: -100px;
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 0 150px 150px 0;
+    border: none;
+}
+
+.f2:hover {
+    transition: 0.5s;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Блок "контакты" */
+.contacts {
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-size: cover;
+    background-image: url(img/back.png);
+}
+
+.contact-form {
+    text-align: center;
+}
+
+.f11 {
+    outline: none;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px;
+    background-color: #F3F3F3;
+    height: 40px;
+}
+
+/* Кнопка "вверх" */
+#myBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: blue;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+#myBtn:hover {
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.5s;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+    html,
+    body {
+        scroll-behavior: smooth;
+    }
+}
+
+/* Настройки адаптивности для поддержки мобильных устройств */
+
+/* Настройки для смартфонов и небольших планшетов */
+@media (max-width: 899px) {
+    nav {
+        padding-bottom: 20px;
+    }
+
+    .menu-links {
+        margin-bottom: 20px;
+    }
+
+    .delivery-steps {
+        margin-bottom: 15px;
+    }
+
+    .nizz, nav, .our-partners-brands-logos,
+    .how-we-delivery-text, .post,
+    .subscribeblock, .contacts, .container1, .container2 {
+        flex-direction: column;
+    }
+
+    .subscribeblock {
+        padding-bottom: 30px;
+    }
+
+    .contact-form {
+        margin-top: 50px;
+    }
+
+    .carta1, .carta2, .carta3, .carta4 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .our-partners-brands-logos {
+        align-items: center;
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Настройки для больших планшетов, ноутбуков и ПК */
+@media (min-width: 900px) {
+    .menu {
+        display: flex;
+    }
+
+    .banner-textbutton-about .banner-text-about p {
+        margin-right: 25%;
+        margin-left: 25%;
+    }
+
+    .banner-textbutton-why .banner-text-why li,
+    .banner-textbutton-why .banner-text-why .button {
+        margin-right: 60%;
+        margin-left: 5%;
+    }
+
+    .our-partners-brands-logos {
+        justify-content: center;
+    }
+
+    .card1, .card2, .card3, .card4 {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .carta2, .carta4 {
+        margin-left: 50px;
+    }
+
+    .container1, .container2 {
+        padding: 30px;
+    }
+
+    .filters {
+        justify-content: center;
+    }
+}
